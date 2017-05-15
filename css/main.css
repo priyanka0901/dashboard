@@ -32,10 +32,11 @@ button {
 .navbar {
   height: 60px;
   border: 1px solid #e2e2e2; }
-  .navbar p {
-    float: right;
-    line-height: 60px;
-    padding-right: 20px; }
+
+.navbar__username {
+  float: right;
+  line-height: 60px;
+  padding-right: 20px; }
 
 .navbar:before {
   content: ' ';
@@ -47,6 +48,38 @@ button {
   vertical-align: middle;
   display: inline-block;
   margin-left: 3%; }
+
+.menubar-hamburger {
+  float: right;
+  display: none; }
+  .menubar-hamburger img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 10px; }
+
+.hamburger-content {
+  background-color: #EBF0F1;
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  display: none; }
+  .hamburger-content p {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    padding: 3px 0;
+    cursor: pointer; }
+
+.hamburger-content p:hover {
+  color: #999; }
+
+.menubar-hamburger:hover .hamburger-content {
+  display: block; }
 
 /*---------sidebar content----------*/
 .sidebar {
@@ -328,7 +361,10 @@ button {
     display: none; }
 
   .mainbar-100 {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .menubar-hamburger {
+    display: block; } }
 @media only screen and (max-width: 768px) {
   .mainbar__card {
     width: 70%;
@@ -343,7 +379,10 @@ button {
     margin: auto; } }
 @media only screen and (max-width: 470px) {
   .mainbar__card {
-    width: 300px; } }
+    width: 300px; }
+
+  .navbar__logo {
+    width: 150px; } }
 @media only screen and (max-width: 380px) {
   .mainbar {
     padding: 0; }
