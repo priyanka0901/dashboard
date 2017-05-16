@@ -123,15 +123,15 @@ button {
 
 .dropdown-menu {
   background-color: $combo-color;
+  border: 0;
   color: $white-color;
+  font-size: 15px;
+  font-weight: 600;
+  height: 40px;
   margin: auto;
+  outline: none;
   padding: 10px;
-
-  p {
-    display: inline-block;
-    font-weight: 600;
-    position: relative;
-  }
+  width: 100%;
 }
 
 .dropdown__content {
@@ -189,11 +189,12 @@ button {
   vertical-align: middle;
   width: 35px;
 
-  img {
-    height: 30px;
-    left: 5px;
+  i {
+    color: $white-color;
+    font-size: 20px;
+    left: 7px;
     position: relative;
-    top: 5px;
+    top: 2px;
   }
 }
 
@@ -281,13 +282,6 @@ button {
     display: table-cell;
     font-size: 20px;
     padding-left: 10px;
-    vertical-align: middle;
-  }
-
-  img {
-    display: table-cell;
-    height: 30px;
-    vertical-align: middle;
   }
 }
 
@@ -311,7 +305,7 @@ button {
 }
 
 .mainbar__filters {
-  margin: 30px;
+  margin: 30px 0;
 
   span {
     background-color: $widget-color;
@@ -320,12 +314,14 @@ button {
     display: inline-table;
     padding: 5px 10px;
 
-    p,
-    img {
+    p {
       display: table-cell;
       height: 20px;
       padding-left: 3px;
       vertical-align: middle;
+    }
+    i {
+      padding-right: 10px;
     }
   }
 }
@@ -333,10 +329,6 @@ button {
 .filter-buttons {
   display: inline-block;
   float: right;
-}
-
-.filter_months {
-  margin-right: 20px;
 }
 
 .mainbar__cards-section {
